@@ -1,0 +1,811 @@
+/* TABLET */
+@media only screen and ( min-width:720px ) and (max-width:1060px){
+	#menu{
+		display: block;
+	    position: absolute;
+		top: 48px;
+		right: 15px;
+	    z-index: 1001;
+	}
+	.nav-movil{
+		border-top: 3px solid #cb2305;
+		position: absolute;
+	    width: 30%;
+	    background: #ffffff;
+	    top: 0;
+	    z-index: 1000;
+	    right: 0;
+	    box-shadow: 1px 3px 10px #d7d7d7;
+	}
+	.nav-movil ul{
+		list-style: none;
+		padding: 80px 0 0 0;
+    	margin: 0;
+	}
+	.nav-movil ul li{
+	    padding: 15px 20px 15px;
+	    font-size: 14px;
+		border-bottom: 1px solid #c2c2c2;
+	}
+	.nav-movil ul li:first-child{
+		border-top: 1px solid #c2c2c2;
+	}
+	.nav-movil ul li.bold{
+		background: #f0efef;
+	}
+	.nav-movil ul li a{
+		color: #bbb;
+	}
+	.nav-movil .line-mail{
+		text-align: right
+	}
+	span#x {
+	  display: block;
+	  width: 30px;
+	  height: 30px;
+	  cursor: pointer;
+	  -webkit-transition: all .3s ease, -webkit-transform .2s ease;
+	          transition: all .3s ease, transform .2s ease;
+	  background: -webkit-linear-gradient(to bottom, transparent 0%, transparent 10%, #ed1e00 10%, #ed1e00 20%, transparent 20%, transparent 40%, #ed1e00 40%, #ed1e00 50%, transparent 50%, transparent 70%, #ed1e00 70%, #ed1e00 80%, transparent 80%), linear-gradient(transparent, transparent);
+	  background: linear-gradient(to bottom, transparent 0%, transparent 10%, #ed1e00 10%, #ed1e00 20%, transparent 20%, transparent 40%, #ed1e00 40%, #ed1e00 50%, transparent 50%, transparent 70%, #ed1e00 70%, #ed1e00 80%, transparent 80%), linear-gradient(transparent, transparent);
+	  -webkit-transform: scale(0.9);
+	      -ms-transform: scale(0.9);
+	          transform: scale(0.9);
+	}
+	span#x.clicked {
+	  background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, #ed1e00 46%, #ed1e00 55%, transparent 51%, transparent 100%), linear-gradient(45deg, transparent 0%, transparent 46%, #ed1e00 46%, #ed1e00 55%, transparent 51%, transparent 100%);
+	  background: linear-gradient(-45deg, transparent 0%, transparent 46%, #ed1e00 46%, #ed1e00 55%, transparent 51%, transparent 100%), linear-gradient(45deg, transparent 0%, transparent 46%, #ed1e00 46%, #ed1e00 55%, transparent 51%, transparent 100%);
+	  -webkit-transform: rotate(180deg);
+	      -ms-transform: rotate(180deg);
+	          transform: rotate(180deg);
+	}
+	span#x.clicked:active, span#x.clicked:hover {
+	  -webkit-transform: scale(0.9) rotate(180deg);
+	      -ms-transform: scale(0.9) rotate(180deg);
+	          transform: scale(0.9) rotate(180deg);
+	}
+	header .menu{
+		padding: 0 15px;
+	}
+	header .menu nav{
+		display: none;
+	}
+	header .programa{
+		display: none;
+	}
+	.slide-home, .slide-home .btn-idioma{
+		/*display: none;*/
+	}
+	.slide-movil{
+		/*display: block;*/
+	}
+	.slide-home{
+		padding: 0 15px 40px;
+	}
+	.slide-home .img{
+		height: 260px;
+	}
+	.slide-home .titulo{
+		font-size: 30px;
+		padding-top: 100px;
+	}
+	.slide-home .subtitulo{
+		font-size: 22px;
+	}
+	.bienvenida{
+		padding: 35px 15px;
+	}
+	.title{
+		font-size: 24px;
+		margin-left: 20px;
+	}
+	.bienvenida p{
+		margin-left: 20px;
+		font-size: 14px;
+	}
+	.bienvenida .slider-bienvenida .img{
+		height: 180px;
+	}
+	.bienvenida .slider-bienvenida .img iframe{
+		height: 180px;
+	}
+	.iconos{
+		padding: 30px 20px;
+	}
+	.iconos .icon{
+		width: calc(100% / 5);
+		margin-bottom: 15px;
+	}
+	.senderos{
+		padding: 30px 15px;
+	}
+	.senderos p{
+	    width: 100%;
+	    padding: 15px 5px;
+	    float: left
+	}
+	.maps .map{
+		width: 50%;
+	}
+	.maps .map .nombre{
+		left: 15px;
+	}
+	.maps p{
+	    padding: 0 15px;
+	}
+	.programas-dest .title{
+		padding: 30px 15px;
+	}
+	.slick-list{
+		padding: 15px 20px !important;
+	}
+	footer .menu{
+		padding: 25px 25px;
+	}
+	footer .menu .box{
+		margin-bottom: 25px;
+	}
+	footer .menu .box ul{
+		margin: 0 40px 0 0;
+	}
+	footer .marcas{
+		padding: 30px 15px;
+	}
+	footer .marcas .img{
+		margin-bottom: 15px;
+	    margin-right: 0px;
+		padding: 0 10px;
+	}
+	footer .marcas .img:nth-child(4){
+		margin-left: 45px;	
+	}
+	.alojamientos p{
+		max-width: 600px;
+		font-size: 14px;
+	}
+	.alojamientos .nav ul{
+		padding: 15px 10px;
+	}
+	.alojamientos .nav ul li{
+
+	}
+	.alojamientos .nav ul li a.name{
+		font-size: 14px;
+	}
+	.alojamientos .nav ul li a{
+		font-size: 10px;
+	}
+	.alojamientos .content .img img{
+		width: 100%;
+	}
+	.alojamientos .content .desc{
+		padding: 20px 20px 0 20px;
+	}
+	.alojamientos .subtitle{
+		width: 600px;
+	}
+	.alojamientos .subtitle .icon{
+		margin-left: 0;
+		margin-right: 20px; 
+	}
+	.alojamientos .descripcion ul{
+	    max-width: 600px;
+	}
+	.programas{
+	    padding: 0 20px;
+	}
+	.programas .prog{
+		width: calc(100% / 2 - 10px);
+	}
+	.programas .prog:nth-child(2n){
+		margin-right: 0;
+	}
+	.submenu ul li{
+	    margin-bottom: 20px;
+	}
+	.programa .title{
+	    padding: 20px;	
+	}
+	.programa p{
+		max-width: 600px;
+	}
+	.programa .img{
+		width: 100%;
+	}
+	.angle-left{
+		left: 20px;
+	}
+	.angle-right{
+		right: 20px;
+	}
+	.programa .dias .dia{
+		display: none;
+		border: 0;
+	}
+	.programa .dias .dia.active{
+		display: block;
+	}
+	.programa .info .mid:first-child{
+		display: none;
+	}
+	.programa .info .mid{
+		width: 100%;
+		height: auto;
+	}
+	.programa .info .title{
+	    margin-left: 20px;
+	    width: 100%;
+	}
+	.programa .info .desc{
+		width: 100%;
+		margin-left: 20px;
+	}
+	.excursion table{
+		width:	100%;
+	}
+	.subtitle{
+		width: 280px;
+	}
+	.excursion .desc{
+	    float: left;
+	    width: 100%;
+	    padding: 0 0 0 40px;
+	}
+	.btn{
+		display: table;
+	}
+	.upTitle{
+		padding: 10px 0 10px;
+	}
+	.destino p{
+		max-width: 600px;
+	}
+	.destino .nav ul{
+		padding: 0;
+	}
+	.destino .nav ul li{
+	    display: block;
+	    width: 100%;
+	    padding: 20px;
+	    text-align: left;
+	}
+	.destino .nav ul li a .icon{
+	    margin: 5px 25px 0 0;
+		float: left;
+	}
+	.destino .descripcion table tr td{
+	    font-size: 12px;
+	}
+	.destino .descripcion{
+		max-width: 600px;
+		display: block;
+	}
+	.submenu ul li a{
+		font-size: 20px;
+	}
+	.page .content{
+		max-width: 600px;
+		padding: 20px 10px;
+	}
+	.contacto form{
+	    padding: 10px;
+	}
+	.banner .titulo{
+		padding-top: 56px;
+		font-size: 40px;
+	}
+	.reserva .title{
+		font-size: 22px;
+	}
+	.reserva .cant-reservas{
+		width:	300px;
+	}
+	.paso2 p{
+		max-width: 600px;
+		font-size: 14px;
+	}
+	.paso2 .circuitos .circuito:first-child{
+		margin-bottom: 30px;
+	}
+	.paso3 .mapa img{
+		width: 100%;
+	}
+	.paso3 .mapa p{
+		width: 600px;
+		font-size: 12px;
+	}
+	.paso3 .opciones .opcion{
+		padding: 5px;
+	    margin-bottom: 10px;
+	}
+	.paso3 .opciones{
+	    width: calc(100% - 20px);
+	    max-width: 600px;
+	}
+	.radio label{
+	    font-size: 14px;
+	    padding: 6px 30px 20px 30px;
+	    margin: 6px 0;
+	    height: 26px;
+	}
+	.radio .angle-right{
+		margin-top: -8px;
+		margin-right: -15px;
+	}
+	.desc .line{
+		display: none;
+	}
+	.paso3 .opciones .desc .opcn{
+		padding: 10px 15px;
+	}
+	.opcn .name{
+		width: 100%;
+		margin-top: 0px;
+		text-align: center;
+	    margin-bottom: 10px;
+	}
+	.opcn .desde{
+		width: calc(50% - 10px);
+	}
+	.opcn .hasta{
+		width: calc(50% - 10px);
+	}
+	.opcn .tipo_aloja{
+		width: calc(50% - 10px);
+		margin:	10px 5px 0;
+	}
+	.opcn .servicios{
+		width: calc(50% - 10px);
+		margin:	10px 5px 0;
+	}
+	.resumen p{
+		width: calc(100% - 20px);
+		font-size: 12px;
+	}
+	.resumen .content{
+		width: calc(100% - 20px);
+	}
+	.resumen .opcion{
+	    font-size: 12px;
+        padding: 10px 20px;
+	}
+
+	.reserva.datos .content{
+		width: calc(100% - 20px);
+	}
+	.reserva.datos .opciones .opcion .desc .line{
+		display: block;
+	}
+	.reserva.datos .opciones .opcion .desc .line label{
+		width: 100%;
+		height: 24px;
+	}
+	.reserva.datos .opciones .opcion .desc .line input{
+		width: 100%;
+	}
+	.reserva.datos .opciones .opcion .desc .line select{
+		width: 100%;
+	}
+}
+
+/* SMARTPHONE */
+@media only screen and ( min-width:320px ) and (max-width:719px){
+
+	#menu{
+		display: block;
+	    position: absolute;
+		top: 48px;
+		right: 15px;
+	    z-index: 1001;
+	}
+	.nav-movil{
+		border-top: 3px solid #cb2305;
+		position: absolute;
+	    width: 80%;
+	    background: #ffffff;
+	    top: 0;
+	    z-index: 1000;
+	    right: 0;
+	    box-shadow: 1px 3px 10px #d7d7d7;
+	}
+	.nav-movil ul{
+		list-style: none;
+		padding: 80px 0 0 0;
+    	margin: 0;
+	}
+	.nav-movil ul li{
+	    padding: 15px 20px 15px;
+	    font-size: 14px;
+		border-bottom: 1px solid #c2c2c2;
+	}
+	.nav-movil ul li:first-child{
+		border-top: 1px solid #c2c2c2;
+	}
+	.nav-movil ul li.bold{
+		background: #f0efef;
+	}
+	.nav-movil ul li a{
+		color: #bbb;
+	}
+	.nav-movil .line-mail{
+		text-align: right
+	}
+	span#x {
+	  display: block;
+	  width: 30px;
+	  height: 30px;
+	  cursor: pointer;
+	  -webkit-transition: all .3s ease, -webkit-transform .2s ease;
+	          transition: all .3s ease, transform .2s ease;
+	  background: -webkit-linear-gradient(to bottom, transparent 0%, transparent 10%, #ed1e00 10%, #ed1e00 20%, transparent 20%, transparent 40%, #ed1e00 40%, #ed1e00 50%, transparent 50%, transparent 70%, #ed1e00 70%, #ed1e00 80%, transparent 80%), linear-gradient(transparent, transparent);
+	  background: linear-gradient(to bottom, transparent 0%, transparent 10%, #ed1e00 10%, #ed1e00 20%, transparent 20%, transparent 40%, #ed1e00 40%, #ed1e00 50%, transparent 50%, transparent 70%, #ed1e00 70%, #ed1e00 80%, transparent 80%), linear-gradient(transparent, transparent);
+	  -webkit-transform: scale(0.9);
+	      -ms-transform: scale(0.9);
+	          transform: scale(0.9);
+	}
+	span#x.clicked {
+	  background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, #ed1e00 46%, #ed1e00 55%, transparent 51%, transparent 100%), linear-gradient(45deg, transparent 0%, transparent 46%, #ed1e00 46%, #ed1e00 55%, transparent 51%, transparent 100%);
+	  background: linear-gradient(-45deg, transparent 0%, transparent 46%, #ed1e00 46%, #ed1e00 55%, transparent 51%, transparent 100%), linear-gradient(45deg, transparent 0%, transparent 46%, #ed1e00 46%, #ed1e00 55%, transparent 51%, transparent 100%);
+	  -webkit-transform: rotate(180deg);
+	      -ms-transform: rotate(180deg);
+	          transform: rotate(180deg);
+	}
+	span#x.clicked:active, span#x.clicked:hover {
+	  -webkit-transform: scale(0.9) rotate(180deg);
+	      -ms-transform: scale(0.9) rotate(180deg);
+	          transform: scale(0.9) rotate(180deg);
+	}
+	header .menu{
+		padding: 0 15px;
+	}
+	header .menu nav{
+		display: none;
+	}
+	header .programa{
+		display: none;
+	}
+	.slide-home, .slide-home .btn-idioma{
+		display: none;
+	}
+	.slide-movil{
+		display: block
+	}
+	.slide-home{
+		padding: 0 15px 40px;
+	}
+	.slide-home .img{
+		height: 130px;
+	}
+	.slide-home .titulo{
+		font-size: 18px;
+		padding-top: 46px;
+	}
+	.slide-home .subtitulo{
+		font-size: 14px;
+	}
+	.bienvenida{
+		padding: 35px 15px;
+	}
+	.mid{
+		width: 100%;
+	}
+	.title{
+		font-size: 24px;
+		margin-left: 20px;
+	}
+	.bienvenida p{
+		margin-left: 20px;
+		font-size: 14px;
+	}
+	.bienvenida .slider-bienvenida .img{
+		height: 140px;
+	}
+	.bienvenida .slider-bienvenida .img iframe{
+		height: 140px;
+	}
+	.iconos{
+		padding: 30px 20px;
+	}
+	.iconos .icon{
+		width: calc(100% / 3);
+		margin-bottom: 15px;
+	}
+	.iconos .icon:nth-child(4){
+		margin-left: 45px;
+	}
+	.senderos{
+		padding: 30px 15px;
+	}
+	.senderos p{
+	    width: 100%;
+	    padding: 15px 5px;
+	    float: left
+	}
+	.maps .map{
+		width: 100%;
+	}
+	.maps .map .nombre{
+		left: 15px;
+	}
+	.maps p{
+	    padding: 0 15px;
+	}
+	.programas-dest .title{
+		padding: 30px 15px;
+	}
+	.slick-list{
+		padding: 15px 20px !important;
+	}
+	footer .menu{
+		padding: 25px 25px;
+	}
+	footer .menu .box{
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	footer .menu .box ul{
+		margin: 0 40px 0 0;
+	}
+	footer .marcas{
+		padding: 30px 15px;
+	}
+	footer .marcas .img{
+		width: calc(100% / 3);
+		margin-bottom: 15px;
+	    margin-right: 0px;
+		padding: 0 10px;
+	}
+	footer .marcas .img:nth-child(4){
+		margin-left: 45px;	
+	}
+	.alojamientos p{
+		max-width: 280px;
+		font-size: 14px;
+	}
+	.alojamientos .nav ul{
+		padding: 15px 10px;
+	}
+	.alojamientos .nav ul li{
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.alojamientos .content .img{
+		width: 100%;
+	}
+	.alojamientos .content .img img{
+		width: 100%;
+	}
+	.alojamientos .content .desc{
+		width: 100%;
+		padding: 50px 40px 0 35px;	
+	}
+	.alojamientos .subtitle{
+		width: 280px;
+	}
+	.alojamientos .subtitle .icon{
+		margin-left: 0;
+		margin-right: 20px; 
+	}
+	.alojamientos .descripcion ul{
+	    max-width: 240px;
+	}
+	.programas{
+	    padding: 0 20px;
+	}
+	.programas .prog{
+		width: 100%;
+	}
+	.submenu ul li{
+	    margin-bottom: 20px;
+	}
+	.programa .title{
+	    padding: 20px;	
+	}
+	.programa p{
+		max-width: 280px;
+	}
+	.programa .img{
+		width: 100%;
+	}
+	.angle-left{
+		left: 20px;
+	}
+	.angle-right{
+		right: 20px;
+	}
+	.programa .dias .dia{
+		display: none;
+		border: 0;
+	}
+	.programa .dias .dia.active{
+		display: block;
+	}
+	.programa .info .mid:first-child{
+		display: none;
+	}
+	.programa .info .mid{
+		width: 100%;
+		height: auto;
+	}
+	.programa .info .title{
+	    margin-left: 20px;
+	    width: 100%;
+	}
+	.programa .info .desc{
+		width: 100%;
+		margin-left: 20px;
+	}
+	.excursion table{
+		width:	100%;
+	}
+	.subtitle{
+		width: 280px;
+	}
+	.excursion .desc{
+	    float: left;
+	    width: 100%;
+	    padding: 0 0 0 40px;
+	}
+	.btn{
+		display: table;
+	}
+	.upTitle{
+		padding: 10px 0 10px;
+	}
+	.destino p{
+		max-width: 280px;
+	}
+	.destino .nav ul{
+		padding: 0;
+	}
+	.destino .nav ul li{
+	    display: block;
+	    width: 100%;
+	    padding: 20px;
+	    text-align: left;
+	}
+	.destino .nav ul li a .icon{
+	    margin: 5px 25px 0 0;
+		float: left;
+	}
+	.destino .descripcion table tr td{
+	    font-size: 12px;
+	}
+	.destino .descripcion{
+		max-width: 240px;
+		display: block;
+	}
+	.page .content{
+		max-width: 300px;
+		padding: 20px 10px;
+	}
+	.contacto form{
+	    padding: 10px;
+	}
+	.banner .titulo{
+		padding-top: 12px;
+		font-size: 20px;
+	}
+	.reserva .title{
+		font-size: 22px;
+	}
+	.reserva .cant-reservas{
+		width:	300px;
+	}
+	.paso2 p{
+		max-width: 280px;
+		font-size: 14px;
+	}
+	.paso2 .circuitos .circuito:first-child{
+		margin-bottom: 30px;
+	}
+	.paso3 .mapa img{
+		width: 100%;
+	}
+	.paso3 .mapa p{
+		width: 280px;
+		font-size: 12px;
+	}
+	.paso3 .opciones .opcion{
+		padding: 5px;
+	    margin-bottom: 10px;
+	}
+	.paso3 .opciones{
+	    width: calc(100% - 20px);
+	}
+	.radio label{
+	    font-size: 11px;
+	    padding: 0px 30px 20px 30px;
+	    margin: 6px 0;
+	    height: 26px;
+	}
+	.radio .angle-right{
+		margin-top: -8px;
+		margin-right: -15px;
+	}
+	.desc .line{
+		display: none;
+	}
+	.paso3 .opciones .desc .opcn{
+		padding: 10px 15px;
+	}
+	.opcn .name{
+		width: 100%;
+		margin-top: 0px;
+		text-align: center;
+	    margin-bottom: 10px;
+	}
+	.opcn .desde{
+		width: calc(50% - 10px);
+	}
+	.opcn .hasta{
+		width: calc(50% - 10px);
+	}
+	.opcn .tipo_aloja{
+		width: calc(50% - 10px);
+		margin:	10px 5px 0;
+	}
+	.opcn .servicios{
+		width: calc(50% - 10px);
+		margin:	10px 5px 0;
+	}
+	.resumen p{
+		width: calc(100% - 20px);
+		font-size: 12px;
+	}
+	.resumen .content{
+		width: calc(100% - 20px);
+	}
+	.resumen .opcion{
+	    font-size: 12px;
+        padding: 10px 20px;
+	}
+	.resumen table td{
+		width: 100%;
+	    padding: 10px 5px;
+	}
+	table.responsive{
+		width:100%;
+	}
+	table.responsive thead{
+		display: none;
+	}
+	table.responsive tr{
+		float: left;
+		width: 50%;
+	}
+	table.responsive tr:nth-of-type(2n) {
+		background-color: inherit;
+	}
+	table.responsive tr td:first-child{
+		background: #f0f0f0; 
+		font-size:12px;
+	    height: 46px;
+	}
+	table.responsive tbody td {
+		display: block;  
+		text-align:center;
+	}
+	table.responsive tbody td:before { 
+		content: attr(data-th); 
+		display: block;
+		text-align:center;  
+	}
+	.reserva.datos .content{
+		width: calc(100% - 20px);
+	}
+	.reserva.datos .opciones .opcion .desc .line{
+		display: block;
+	}
+	.reserva.datos .opciones .opcion .desc .line label{
+		width: 100%;
+		height: 24px;
+	}
+	.reserva.datos .opciones .opcion .desc .line input{
+		width: 100%;
+	}
+	.reserva.datos .opciones .opcion .desc .line select{
+		width: 100%;
+	}
+}
