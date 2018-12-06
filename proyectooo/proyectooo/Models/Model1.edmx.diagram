@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b1e708d013c94b2d938c4eedf2ae59f7" Name="Diagram1" >
+        <EntityTypeShape EntityType="Vertice01Model.Alojamiento" Width="1.5" PointX="4.5" PointY="1.25" />
+        <EntityTypeShape EntityType="Vertice01Model.Alojamiento_has_servicio_adicional" Width="2.25" PointX="0.75" PointY="2.375" />
+        <EntityTypeShape EntityType="Vertice01Model.Alojamiento_has_tipo_alojamineto" Width="1.5" PointX="2.625" PointY="4.375" />
+        <EntityTypeShape EntityType="Vertice01Model.Tipo_alojamiento" Width="1.5" PointX="0.5" PointY="9.625" />
+        <EntityTypeShape EntityType="Vertice01Model.Reserva_alojamiento" Width="1.5" PointX="7.625" PointY="8.25" />
+        <EntityTypeShape EntityType="Vertice01Model.Programa_has_alojamiento" Width="2" PointX="7.125" PointY="3.25" />
+        <EntityTypeShape EntityType="Vertice01Model.Servicio_adicional" Width="2.25" PointX="0.625" PointY="0.5" />
+        <EntityTypeShape EntityType="Vertice01Model.Programa" Width="1.5" PointX="6.125" PointY="5.625" />
+        <EntityTypeShape EntityType="Vertice01Model.Reserva_programa" Width="1.875" PointX="1" PointY="6.625" />
+        <EntityTypeShape EntityType="Vertice01Model.Reserva" Width="1.5" PointX="4.125" PointY="6.875" />
+        <EntityTypeShape EntityType="Vertice01Model.Reserva_detalle" Width="1.5" PointX="2.625" PointY="9.875" />
+        <EntityTypeShape EntityType="Vertice01Model.Reserva_excursion" Width="1.5" PointX="5.625" PointY="10.25" />
+        <EntityTypeShape EntityType="Vertice01Model.Excursion" Width="1.5" PointX="8.125" PointY="11.125" />
+        <AssociationConnector Association="Vertice01Model.AlojamientoAlojamiento_has_servicio_adicional" />
+        <AssociationConnector Association="Vertice01Model.AlojamientoAlojamiento_has_tipo_alojamineto" />
+        <AssociationConnector Association="Vertice01Model.AlojamientoPrograma_has_alojamiento" />
+        <AssociationConnector Association="Vertice01Model.Programa_has_alojamientoPrograma" />
+        <AssociationConnector Association="Vertice01Model.ProgramaReserva_programa" />
+        <AssociationConnector Association="Vertice01Model.Reserva_programaReserva" />
+        <AssociationConnector Association="Vertice01Model.Reserva_alojamientoReserva" />
+        <AssociationConnector Association="Vertice01Model.ReservaReserva_detalle" />
+        <AssociationConnector Association="Vertice01Model.Tipo_alojamientoAlojamiento_has_tipo_alojamineto" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="Vertice01Model.ReservaReserva_excursion" />
+        <AssociationConnector Association="Vertice01Model.ExcursionReserva_excursion" />
+        <AssociationConnector Association="Vertice01Model.Alojamiento_has_servicio_adicionalServicio_adicional" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
