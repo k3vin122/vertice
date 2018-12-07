@@ -21,6 +21,7 @@ namespace proyectooo.Models
         }
     
         public int Id { get; set; }
+        public string Lugar { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Reserva_excursion> Reserva_excursion { get; set; }

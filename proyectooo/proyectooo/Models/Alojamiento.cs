@@ -23,6 +23,16 @@ namespace proyectooo.Models
         }
     
         public int Id { get; set; }
+        public string Nombre { get; set; }
+        public string Accesos { get; set; }
+        public string Baños { get; set; }
+        public string Restaurante { get; set; }
+        public string Electricidad { get; set; }
+        public string Internet { get; set; }
+        public string Almacen { get; set; }
+        public string Custodia_equipaje { get; set; }
+        public string Sala_estar { get; set; }
+        public string Bar { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Alojamiento_has_servicio_adicional> Alojamiento_has_servicio_adicional { get; set; }

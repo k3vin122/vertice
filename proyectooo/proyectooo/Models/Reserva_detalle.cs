@@ -16,6 +16,7 @@ namespace proyectooo.Models
     {
         public int Id { get; set; }
         public int ReservaId { get; set; }
+        public string Precio_total { get; set; }
     
         public virtual Reserva Reserva { get; set; }
     }
