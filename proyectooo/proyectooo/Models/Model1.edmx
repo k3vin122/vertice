@@ -82,6 +82,16 @@
           <NavigationProperty Name="Alojamiento_has_servicio_adicional" Relationship="Vertice01Model.AlojamientoAlojamiento_has_servicio_adicional" FromRole="Alojamiento" ToRole="Alojamiento_has_servicio_adicional" />
           <NavigationProperty Name="Alojamiento_has_tipo_alojamineto" Relationship="Vertice01Model.AlojamientoAlojamiento_has_tipo_alojamineto" FromRole="Alojamiento" ToRole="Alojamiento_has_tipo_alojamineto" />
           <NavigationProperty Name="Programa_has_alojamiento" Relationship="Vertice01Model.AlojamientoPrograma_has_alojamiento" FromRole="Alojamiento" ToRole="Programa_has_alojamiento" />
+          <Property Name="Nombre" Type="String" Nullable="false" />
+          <Property Name="Accesos" Type="String" Nullable="false" />
+          <Property Name="Baños" Type="String" Nullable="false" />
+          <Property Name="Restaurante" Type="String" Nullable="false" />
+          <Property Name="Electricidad" Type="String" Nullable="false" />
+          <Property Name="Internet" Type="String" Nullable="false" />
+          <Property Name="Almacen" Type="String" Nullable="false" />
+          <Property Name="Custodia_equipaje" Type="String" Nullable="false" />
+          <Property Name="Sala_estar" Type="String" Nullable="false" />
+          <Property Name="Bar" Type="String" Nullable="false" />
         </EntityType>
         <EntityType Name="Alojamiento_has_servicio_adicional">
           <Key>
@@ -108,6 +118,7 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <NavigationProperty Name="Alojamiento_has_tipo_alojamineto" Relationship="Vertice01Model.Tipo_alojamientoAlojamiento_has_tipo_alojamineto" FromRole="Tipo_alojamiento" ToRole="Alojamiento_has_tipo_alojamineto" />
+          <Property Name="Nombre" Type="String" Nullable="false" />
         </EntityType>
         <EntityType Name="Reserva_alojamiento">
           <Key>
@@ -131,6 +142,7 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <NavigationProperty Name="Alojamiento_has_servicio_adicional" Relationship="Vertice01Model.Alojamiento_has_servicio_adicionalServicio_adicional" FromRole="Servicio_adicional" ToRole="Alojamiento_has_servicio_adicional" />
+          <Property Name="Nombre_servicio" Type="String" Nullable="false" />
         </EntityType>
         <EntityType Name="Programa">
           <Key>
@@ -139,6 +151,10 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <NavigationProperty Name="Programa_has_alojamiento" Relationship="Vertice01Model.Programa_has_alojamientoPrograma" FromRole="Programa" ToRole="Programa_has_alojamiento" />
           <NavigationProperty Name="Reserva_programa" Relationship="Vertice01Model.ProgramaReserva_programa" FromRole="Programa" ToRole="Reserva_programa" />
+          <Property Name="Nombre_lugar" Type="String" Nullable="false" />
+          <Property Name="Dias" Type="String" Nullable="false" />
+          <Property Name="Noches" Type="String" Nullable="false" />
+          <Property Name="Precio" Type="String" Nullable="false" />
         </EntityType>
         <EntityType Name="Reserva_programa">
           <Key>
@@ -158,6 +174,8 @@
           <NavigationProperty Name="Reserva_alojamiento" Relationship="Vertice01Model.Reserva_alojamientoReserva" FromRole="Reserva" ToRole="Reserva_alojamiento" />
           <NavigationProperty Name="Reserva_detalle" Relationship="Vertice01Model.ReservaReserva_detalle" FromRole="Reserva" ToRole="Reserva_detalle" />
           <NavigationProperty Name="Reserva_excursion" Relationship="Vertice01Model.ReservaReserva_excursion" FromRole="Reserva" ToRole="Reserva_excursion" />
+          <Property Name="Numero_pasajeros" Type="String" Nullable="false" />
+          <Property Name="Nacionalidad" Type="String" Nullable="false" />
         </EntityType>
         <EntityType Name="Reserva_detalle">
           <Key>
@@ -166,6 +184,7 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <NavigationProperty Name="Reserva" Relationship="Vertice01Model.ReservaReserva_detalle" FromRole="Reserva_detalle" ToRole="Reserva" />
           <Property Name="ReservaId" Type="Int32" Nullable="false" />
+          <Property Name="Precio_total" Type="String" Nullable="false" />
         </EntityType>
         <EntityType Name="Reserva_excursion">
           <Key>
@@ -183,6 +202,7 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <NavigationProperty Name="Reserva_excursion" Relationship="Vertice01Model.ExcursionReserva_excursion" FromRole="Excursion" ToRole="Reserva_excursion" />
+          <Property Name="Lugar" Type="String" Nullable="false" />
         </EntityType>
         <Association Name="AlojamientoAlojamiento_has_servicio_adicional">
           <End Type="Vertice01Model.Alojamiento" Role="Alojamiento" Multiplicity="1" />

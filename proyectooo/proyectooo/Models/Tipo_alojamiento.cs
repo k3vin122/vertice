@@ -21,6 +21,7 @@ namespace proyectooo.Models
         }
     
         public int Id { get; set; }
+        public string Nombre { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Alojamiento_has_tipo_alojamineto> Alojamiento_has_tipo_alojamineto { get; set; }

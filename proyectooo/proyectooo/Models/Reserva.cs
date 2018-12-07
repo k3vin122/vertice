@@ -24,6 +24,8 @@ namespace proyectooo.Models
         }
     
         public int Id { get; set; }
+        public string Numero_pasajeros { get; set; }
+        public string Nacionalidad { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Reserva_programa> Reserva_programa { get; set; }
